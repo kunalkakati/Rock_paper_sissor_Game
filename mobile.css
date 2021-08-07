@@ -1,0 +1,37 @@
+@media screen and (max-width: 500px) {
+    .options{
+        flex-direction: column;
+    }
+
+    .options button{
+        margin-bottom: 10px;
+    }
+
+    .hands img{
+        width: 60vw;
+    }
+    .winner{
+        font-size: 10vw;
+    }
+
+    .computer-score h1,.player-score h1{
+        font-size: 7vw;
+    }
+
+    .intro h1{
+        font-size: 7vw;
+    }
+
+    .rules button {
+        margin: 10vh 0 0 70vw;
+    }
+
+    .rule-img{
+        width: 70%;
+        padding: 20px 10px 20px 20px;
+    }
+
+    .rule-img img{
+        width: 80%;
+    }
+}
