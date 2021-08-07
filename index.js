@@ -44,6 +44,10 @@ const game = ()=>{
 
         options.forEach(option=>{
             option.addEventListener("click", function(){
+
+                playerHand.src = `./assets/rock.png`;
+                computerHand.src = `./assets/rock.png`;
+
                 const computerNumber = Math.floor(Math.random()*3);
                 let computerChoice = computerOptions[computerNumber];
 
