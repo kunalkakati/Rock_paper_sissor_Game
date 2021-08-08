@@ -81,18 +81,21 @@ const game = ()=>{
         const winner = document.querySelector(".winner");
 
         if(playerChoice === computerChoice){
+            winner.style.color = "white";
             winner.textContent = "It is a tie";
             return;
         }
 
         if(playerChoice === "rock"){
             if(computerChoice === "paper"){
+                winner.style.color = "red";
                 winner.textContent = "Computer win";
                 ComputerScore++;
                 updateScore();
                 return;
             }
             else{
+                winner.style.color = "green";
                 winner.textContent = "Player win";
                 PlayerScore++;
                 updateScore();
@@ -102,12 +105,14 @@ const game = ()=>{
 
         if(playerChoice === "paper"){
             if(computerChoice === "scissors"){
+                winner.style.color = "red";
                 winner.textContent = "Computer win";
                 ComputerScore++;
                 updateScore();
                 return;
             }
             else{
+                winner.style.color = "green";
                 winner.textContent = "Player win";
                 PlayerScore++;
                 updateScore();
@@ -117,12 +122,14 @@ const game = ()=>{
 
         if(playerChoice === "scissors"){
             if(computerChoice === "rock"){
+                winner.styl.color = "red";
                 winner.textContent = "Computer win";
                 ComputerScore++;
                 updateScore();
                 return;
             }
             else{
+                winner.style.color = "green";
                 winner.textContent = "Player win";
                 PlayerScore++;
                 updateScore();
